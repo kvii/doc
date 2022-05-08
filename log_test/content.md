@@ -11,13 +11,13 @@
 >版权声明：本文为CSDN博主「qhh0205」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 >原文链接：https://blog.csdn.net/qianghaohao/article/details/104103717
 
-但 [file-rotatelogs](https://github.com/lestrrat-go/file-rotatelogs) 这个库其实已经被库作者归档了。而且该工程基于 go 1.12。已经几年没有更新了。作者也在 REAME 中明确说明了不要使用该库。
+但 [file-rotatelogs](https://github.com/lestrrat-go/file-rotatelogs) 这个库其实已经被库作者归档了。而且该工程基于 go 1.12。已经几年没有更新了。作者也在 README 中明确说明了不要使用该库。
 
 ![image-20220426222312986](rotatelogs_github.png)
 
 其实在 [pkg.go.dev](https://pkg.go.dev/search?q=rotate+log) 里搜索 "rotate log" 还是能搜到不少库的。
 
-![image-20220426225753513](/Users/kvii/workspace/md/log_test/log_search_result.png)
+![image-20220426225753513](log_search_result.png)
 
 但这些库的 star 数……还有很大的进步空间。所以还是决定自己写了。
 
