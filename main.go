@@ -17,6 +17,8 @@ import (
 	"os"
 	"os/signal"
 	"sync"
+
+	"github.com/kvii/handler"
 )
 
 var (
@@ -43,7 +45,7 @@ func main() {
 	defer stop()
 
 	s := http.Server{
-		Handler: http.FileServer(http.Dir(dir)),
+		Handler: handler.VueServer(http.Dir(dir)),
 	}
 
 	var wg sync.WaitGroup
